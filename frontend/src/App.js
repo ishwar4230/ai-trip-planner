@@ -46,7 +46,7 @@ export default function App() {
       setLoading(true);
       setItinerary(null);
 
-      const { data } = await axios.post(`${API_PREFIX}/trip/options`, {
+      const { data } = await axios.post(`/trip/options`, {
         state, month
       });
 
@@ -66,7 +66,7 @@ export default function App() {
     try {
       setLoading(true);
 
-      const { data } = await axios.post(`${API_PREFIX}/trip/itinerary`, {
+      const { data } = await axios.post(`/trip/itinerary`, {
         state, month, place
       });
 
