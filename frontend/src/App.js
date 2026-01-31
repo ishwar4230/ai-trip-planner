@@ -25,7 +25,7 @@ const months = [
   "January","February","March","April","May","June",
   "July","August","September","October","November","December"
 ];
-const API_PREFIX = 'http://localhost:5000'
+const API_PREFIX = 'https://ai-trip-planner-irb4.onrender.com';
 export default function App() {
   const [state, setState] = useState('');
   const [month, setMonth] = useState('');
